@@ -8,6 +8,7 @@ exports.up = function(knex) {
         table.string('phone').notNull()
         table.string('mobile').notNull()
         table.string('company_type_id').notNull()
+        table.timestamps(true)
     })
   
 };

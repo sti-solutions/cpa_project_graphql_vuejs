@@ -4,6 +4,7 @@ exports.up = function(knex) {
         table.increments('id').primary()
         table.string('city').notNull()
         table.string('uf').notNull()
+        table.timestamps(true)
     })
     
 };
