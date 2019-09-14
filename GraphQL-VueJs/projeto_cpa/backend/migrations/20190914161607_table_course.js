@@ -1,9 +1,9 @@
 
 exports.up = function(knex) {
-    return knex.schema.createTable('courses',table=>{
+    return knex.schema.createTable('courses', table=>{
         table.increments('id').primary()
         table.string('name').notNull()
-        table.string('company_id').notNull()
+        table.integer('company_id').unsigned().references('companys.id');
         table.string('periods_id').notNull()
         table.string('evaluations_id').notNull()
         table.timestamps(true,true)
