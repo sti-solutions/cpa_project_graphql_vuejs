@@ -4,6 +4,8 @@ exports.up = function(knex) {
         table.increments('id').primary()
         table.string('name').notNull()
         table.string('company_id').notNull()
+        table.string('periods_id').notNull()
+        table.string('evaluations_id').notNull()
         table.timestamps(true,true)
     })
   
