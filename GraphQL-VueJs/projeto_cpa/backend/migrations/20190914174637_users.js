@@ -7,7 +7,7 @@ exports.up = function(knex) {
         table.string('senha',60).notNull()
         table.boolean('ativo').notNull()
             .defaultTo(true)
-        table.timestamps(true)
+        table.timestamps(true,true)
     })
 };
 

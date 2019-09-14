@@ -4,7 +4,7 @@ exports.up = function(knex) {
         table.increments('id').primary()
         table.string('name').notNull()
         table.string('company_id').notNull()
-        table.timestamps(true)
+        table.timestamps(true,true)
     })
   
 };

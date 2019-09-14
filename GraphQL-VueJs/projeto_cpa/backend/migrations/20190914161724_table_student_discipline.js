@@ -4,7 +4,7 @@ exports.up = function(knex) {
         table.increments('id').primary()
         table.string('students_id').notNull()
         table.string('disciplines_id').notNull()
-        table.timestamps(true)
+        table.timestamps(true,true)
     })
   
 };

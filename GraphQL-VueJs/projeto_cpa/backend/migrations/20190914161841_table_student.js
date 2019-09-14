@@ -7,7 +7,7 @@ exports.up = function(knex) {
         table.string('register').notNull()
         table.string('mobile').notNull()
         table.string('company_id').notNull()
-        table.timestamps(true)
+        table.timestamps(true,true)
     })
   
 };

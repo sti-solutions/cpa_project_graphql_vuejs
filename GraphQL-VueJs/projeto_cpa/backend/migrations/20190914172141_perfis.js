@@ -4,7 +4,7 @@ exports.up = function(knex) {
         table.increments('id').primary()
         table.string('name').notNull()
         table.string('rotulo').notNull()
-        table.timestamps(true)
+        table.timestamps(true,true)
     }).then(function(){
         return knex('perfis').insert([
             {name:'student', rotulo: 'Student'},
