@@ -4,6 +4,13 @@ exports.up = function(knex) {
         table.increments('id').primary()
         table.string('name').notNull()
         table.string('rotulo').notNull()
+    }).then(function(){
+        return knex('perfis').insert([
+            {nome:'student', rotulo: 'Student'},
+            {nome:'coordinator', rotulo: 'Coordinator'},
+            {nome:'teacher', rotulo: 'Teacher'},
+            {nome:'admin', rotulo: 'Admin'}
+        ])
     })
 
   
