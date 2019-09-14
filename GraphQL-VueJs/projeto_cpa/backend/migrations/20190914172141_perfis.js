@@ -6,14 +6,12 @@ exports.up = function(knex) {
         table.string('rotulo').notNull()
     }).then(function(){
         return knex('perfis').insert([
-            {nome:'student', rotulo: 'Student'},
-            {nome:'coordinator', rotulo: 'Coordinator'},
-            {nome:'teacher', rotulo: 'Teacher'},
-            {nome:'admin', rotulo: 'Admin'}
+            {name:'student', rotulo: 'Student'},
+            {name:'coordinator', rotulo: 'Coordinator'},
+            {name:'teacher', rotulo: 'Teacher'},
+            {name:'admin', rotulo: 'Admin'}
         ])
     })
-
-  
 };
 
 exports.down = function(knex) {

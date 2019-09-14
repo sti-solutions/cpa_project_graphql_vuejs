@@ -5,7 +5,7 @@ exports.up = function(knex) {
         table.string('city').notNull()
         table.string('uf').notNull()
     })
-  
+    
 };
 
 exports.down = function(knex) {
