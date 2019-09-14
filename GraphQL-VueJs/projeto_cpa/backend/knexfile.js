@@ -1,13 +1,10 @@
 // Update with your config settings.
+const {connection} = require ('./.env')
 
 module.exports = {
 
   client: 'mysql',
-  connection: {
-    database: 'cpa_project',
-    user:     'root',
-    password: 'admin'
-  },
+  connection,
   pool: {
     min: 2,
     max: 10
