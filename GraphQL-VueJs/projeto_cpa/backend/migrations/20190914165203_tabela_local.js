@@ -2,7 +2,7 @@
 exports.up = function(knex) {
     return knex.schema.createTable('locals',table=>{
         table.increments('id').primary()
-        table.string('city').notNull().unique()
+        table.string('city').notNull()
         table.string('uf').notNull()
     })
   
