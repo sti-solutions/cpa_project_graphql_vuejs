@@ -1,8 +1,15 @@
 
 exports.up = function(knex) {
+    return knex.schema.createTable('evaluations',table=>{
+        table.increments('id').primary()
+        table.string('name').notNull().unique()
+        table.string('description').notNull()
+        table.string('date').notNull()
+    })
   
 };
 
 exports.down = function(knex) {
+    return knex.schema.dropTable('evaluations')
   
 };
