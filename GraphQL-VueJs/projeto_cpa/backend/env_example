@@ -1,0 +1,11 @@
+NODE_ENV=development
+NODE_ENV=production
+
+APP_DB_HOST= path do banco
+APP_DB_PORT= porta utilizada pelo banco
+APP_DB_NAME= nome do database
+APP_DB_USER= usuario do banco
+APP_DB_PASSWORD= senha do banco
+
+APP_AUTH_SECRET=escolher um segredo
+
