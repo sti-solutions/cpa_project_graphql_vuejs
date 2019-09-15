@@ -5,7 +5,6 @@ exports.up = function(knex) {
         table.string('title').notNull()
         table.string('description').notNull()
         table.integer('evaluations_id').unsigned().references('evaluations.id');
-        table.string('likert_scale_id').notNull()
         table.timestamps(true,true)
     })
 };
