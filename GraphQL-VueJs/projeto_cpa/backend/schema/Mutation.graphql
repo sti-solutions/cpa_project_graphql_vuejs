@@ -1,6 +1,6 @@
 type Mutation {
     # Virgula opcional
-    # Mutations de Usuario
+    #===============================MUTATIONS DE USUARIO===================================#
     novoUsuario(
         dados: UsuarioInput!
     ): Usuario!
@@ -14,7 +14,7 @@ type Mutation {
         dados: UsuarioInput!
     ): Usuario
 
-    # Mutations de Perfil
+    #===============================MUTATIONS DE PERFIS===================================#
     novoPerfil(
         dados: PerfilInput!
     ): Perfil!
@@ -27,4 +27,17 @@ type Mutation {
         filtro: PerfilFiltro!
         dados: PerfilInput!
     ): Perfil
+    #===============================MUTATIONS DE COMPANY===================================#
+    newCompany(
+        dados: CompanyInput!
+    ): Perfil!
+
+    deleteCompany(
+        filtro: CompanyFiltro!
+    ): Company
+
+    alterCompany(
+        filtro: CompanyFiltro!
+        dados: CompanyInput!
+    ): Company
 }

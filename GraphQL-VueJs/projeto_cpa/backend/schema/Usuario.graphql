@@ -34,3 +34,26 @@ input PerfilFiltro {
     id: Int
     name: String
 }
+#===============================COMPANY===================================#
+type Company {
+    id: Int
+    name: String!
+    email: String!
+    adress: String!
+    phone: String!
+    mobile: String!
+
+}
+
+input CompanyInput {
+    name: String!
+    email: String!
+    adress: String!
+    phone: String!
+    mobile: String!
+}
+
+input CompanyFiltro {
+    id: Int
+    name: String
+}
