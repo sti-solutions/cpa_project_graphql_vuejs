@@ -2,8 +2,8 @@
 exports.up = function(knex) {
     return knex.schema.createTable('teachers_disciplines',table=>{
         table.increments('id').primary()
-        table.string('teachers_id').notNull()
-        table.string('disciplines_id').notNull()
+        table.integer('disciplines_id').unsigned().references('disciplines.id');
+        table.integer('teachers_id').unsigned().references('teachers.id');
         table.timestamps(true,true)
         
     })
