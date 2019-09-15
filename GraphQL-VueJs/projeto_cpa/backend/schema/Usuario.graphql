@@ -39,7 +39,7 @@ type Company {
     id: Int
     name: String!
     email: String!
-    adress: String!
+    address: String!
     phone: String!
     mobile: String!
 
@@ -48,7 +48,7 @@ type Company {
 input CompanyInput {
     name: String!
     email: String!
-    adress: String!
+    address: String!
     phone: String!
     mobile: String!
 }
