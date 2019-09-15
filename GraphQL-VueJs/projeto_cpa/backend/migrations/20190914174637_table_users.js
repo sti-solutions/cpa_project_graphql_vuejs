@@ -4,7 +4,7 @@ exports.up = function(knex) {
         table.increments('id').primary()
         table.string('name').notNull()
         table.string('email').notNull().unique()
-        table.string('senha',60).notNull()
+        table.string('password',60).notNull()
         table.boolean('ativo').notNull()
             .defaultTo(true)
         table.timestamps(true,true)
