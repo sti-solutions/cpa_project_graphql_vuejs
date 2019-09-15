@@ -5,7 +5,7 @@ exports.up = function(knex) {
         table.string('name').notNull()
         table.string('description').notNull()
         table.date('date').notNull()
-        table.string('courses_id').notNull()
+        table.integer('courses_id').unsigned().references('courses.id');
         table.string('questions_id').notNull()
         table.timestamps(true,true)
     })
