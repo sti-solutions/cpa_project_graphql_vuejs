@@ -8,6 +8,12 @@ exports.up = function(knex) {
         table.boolean('ativo').notNull()
             .defaultTo(true)
         table.timestamps(true,true)
+    }).then(function () {
+        return knex('users').insert([
+            {name:'Iago' ,email:'iago@santo.com',password:'123456'},
+            {name:'Maria' ,email:'maria@santo.com',password:'123456'},
+            {name:'João' ,email:'joao@santo.com',password:'123456'}
+        ])
     })
 };
 

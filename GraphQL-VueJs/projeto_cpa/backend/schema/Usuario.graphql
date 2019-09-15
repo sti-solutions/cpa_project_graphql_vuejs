@@ -1,0 +1,36 @@
+#===============================USERS===================================#
+type Usuario {
+    id: Int
+    name: String!
+    email: String!
+    perfis: [Perfil]
+}
+
+input UsuarioInput {
+    name: String
+    email: String
+    password: String
+    perfis: [PerfilFiltro]
+}
+
+input UsuarioFiltro {
+    id: Int
+    email: String
+}
+
+#===============================PERFIL===================================#
+type Perfil {
+    id: Int
+    name: String!
+    rotulo: String!
+}
+
+input PerfilInput {
+    name: String
+    rotulo: String
+}
+
+input PerfilFiltro {
+    id: Int
+    name: String
+}
