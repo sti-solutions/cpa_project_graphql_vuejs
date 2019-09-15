@@ -4,8 +4,6 @@ exports.up = function(knex) {
         table.increments('id').primary()
         table.string('name').notNull()
         table.integer('companys_id').unsigned().references('companys.id');
-        table.string('periods_id').notNull()
-        table.string('evaluations_id').notNull()
         table.timestamps(true,true)
     })
   

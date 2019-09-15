@@ -7,9 +7,6 @@ exports.up = function(knex) {
         table.string('address').notNull()
         table.string('phone').notNull()
         table.string('mobile').notNull()
-        table.string('company_type_id').notNull()
-        table.string('courses_id').notNull()
-        table.string('teachers_id').notNull()
         table.timestamps(true,true)
     })
   
