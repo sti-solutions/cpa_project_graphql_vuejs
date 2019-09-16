@@ -6,5 +6,7 @@ type Query {
     perfil(filtro: PerfilFiltro!): Perfil
     companys: [Company]
     company(filtro:CompanyFiltro!): Company
+    courses: [Course]
+    course(filtro:CourseFiltro!): Course
 
 }
