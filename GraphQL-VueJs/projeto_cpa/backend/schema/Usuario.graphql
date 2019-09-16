@@ -61,9 +61,11 @@ input CompanyFiltro {
 type Course {
     id: Int
     name: String!
+    company:[Company!]
 }
 input CourseInput {
     name: String!
+    company:Company!
 }
 input CourseFiltro {
     id: Int
